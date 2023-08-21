@@ -49,6 +49,12 @@ hr{
 }
 li:hover{
   background-color: red;
+  animation-name: mv1 ;
+  animation-duration: 1s ;
+  animation-delay:  0;
+  animation-iteration-count:  infinite; 
+  animation-direction:  reverse;
+
 }
 .active{
   background-color: aqua;
@@ -81,7 +87,18 @@ p{
 
 .red1{
   margin:3vh 3vw 2vh 0 ;
+
+  animation-name: mv ;
+  animation-duration: 2s ;
+  animation-delay:  0;
+  animation-iteration-count:  infinite; 
+  animation-direction:  reverse ;
+
 }
+ 
+
+
+
 
 .no-color{
   background-color: aliceblue;
@@ -95,5 +112,48 @@ p{
 .a{
   height:2em;
   margin: 1em 0 ;
+
 }
 
+.right img{
+  animation-name: mv ;
+  animation-duration: 3s ;
+  animation-delay:  0;
+  animation-iteration-count:  infinite; 
+  animation-direction:  alternate-reverse ;
+}
+
+@keyframes mv {
+  from{
+    transform: scale(1);
+  }
+ 
+
+  to{
+    transform: scale(1.2);
+
+  }
+
+
+
+  
+  
+}
+
+
+@keyframes mv1 {
+  from{
+    transform: scale(1);
+  }
+ 
+
+  to{
+    transform: scale(1.2);
+
+  }
+
+
+
+  
+  
+}
