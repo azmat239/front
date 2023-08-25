@@ -7,7 +7,7 @@ body{
   font-weight: bolder;
 }
 .logo{
-  height: 10vh;
+  height: 8vh;
   width: 10vw;
 }
 nav{
@@ -36,11 +36,13 @@ li a{
   padding: 8px;
  }
  button{
-  padding: 6px 10px;
+  padding: 10px 15px;
   background-color: red;
   color:white;
   font-family:  'Arial Narrow Bold', sans-serif;
   border: 1px solid white;
+  font-size: larger;
+  font-weight: 300;
   cursor: pointer;
  }
 hr{
@@ -94,13 +96,6 @@ p{
 
 .red1{
   margin:3vh 3vw 2vh 0 ;
-
-  animation-name: mv ;
-  animation-duration: 2s ;
-  animation-delay:  0;
-  animation-iteration-count:  infinite; 
-  animation-direction:  reverse ;
-
 }
  
 
@@ -157,11 +152,57 @@ p{
 
   to{
     transform: scale(1.2);
-
+    
   }
 
 
 
   
+  
+}
+@media screen and (max-width:1024px){
+  body{
+    width: 100vw;
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    width: 70%;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 0;
+  }
+  nav > div{
+    text-align: center;
+  }
+  ul{
+    text-align: center;
+  }
+
+  li{
+    padding: 3px;
+    margin: 1rem;
+  }
+  .logo{
+   height: 3rem;
+   width: 3rem;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 13rem;
+    text-align: center;
+  }
+  .left{
+    margin: 10rem 0 0 3rem;
+    width: 60%;
+  }
+  .right img{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 40vh;
+    left: 25vw;
+  }
   
 }

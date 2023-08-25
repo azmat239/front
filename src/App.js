@@ -20,8 +20,8 @@ function App(){
           <li><a href='https://www.google.com'>Contact</a></li>
         </ul>
         <button type='button'>Login</button> 
-      </nav>
       <hr/>
+      </nav>
 
       <div className='main'>
           <div className='left'>
